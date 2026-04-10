@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini KMS Admin</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="login-container">
+        <h2>登录</h2>
+        <form id="login-form">
+            <input type="text" id="account" placeholder="账号" required>
+            <input type="password" id="password" placeholder="密码" required>
+            <button type="submit">登录</button>
+        </form>
+        <div id="login-message"></div>
+    </div>
+
+    <div id="app" style="display: none;">
+        <h1>Mini KMS Admin</h1>
+        <nav>
+            <button id="users-btn">用户管理</button>
+            <button id="devices-btn">设备管理</button>
+            <button id="keypacks-btn">密钥包管理</button>
+            <button id="status-btn">状态</button>
+            <button id="logout-btn">登出</button>
+        </nav>
+
+        <div id="content">
+            <!-- 内容将在这里动态加载 -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
